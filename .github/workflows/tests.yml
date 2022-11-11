@@ -29,9 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Unit tests
-      run: |
-        ./gradlew test
-        junit '**/build/test-results/**/*'
+      run: ./gradlew test
     - name: Integration tests
       run: ./gradlew integTest
 
